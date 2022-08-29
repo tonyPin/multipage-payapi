@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@400;700&display=swap");
+
+/* CUSTOM PROPERTIES */
+:root {
+  --Dark-Pink: #ba4270;
+  --Charm-Pink-Actives: #da6d97;
+  --Mirage-Blue: #1b262f;
+  --San-Juan-Blue: #36536b;
+  --Light-San-Juan-Blue: #6c8294;
+  --Link-Water-White: #fbfcfe;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Public Sans", sans-serif;
+  overflow-x: hidden;
+  background: #edf3f8;
+  height: 100vh;
+}
+h1,
+h2,
+h3,
+p,
+a {
+  font: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrapper {
+  max-width: 144rem;
+  margin: 0 auto;
 }

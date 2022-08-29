@@ -1,0 +1,25 @@
+.container {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0;
+}
+.heading {
+  font-weight: 700;
+  font-size: 7.2rem;
+  line-height: 7.2rem;
+  color: red;
+  letter-spacing: -0.553846px;
+}
+.desc {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: var(--Mirage-Blue);
+  padding: 2.4rem 0;
+}
+.text {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: var(--Mirage-Blue);
+}

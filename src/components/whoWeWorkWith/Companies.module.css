@@ -1,0 +1,107 @@
+.bg {
+  background-color: var(--Mirage-Blue);
+}
+
+.companyWrap {
+  padding: 10rem 16.4rem 0;
+}
+.title {
+  font-family: "DM Serif Display";
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  letter-spacing: -0.369231px;
+  color: var(--Link-Water-White);
+}
+.description {
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  color: var(--Link-Water-White);
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  padding-top: 2.4rem;
+}
+.btn {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  text-decoration: none;
+  color: var(--Link-Water-White);
+  text-align: center;
+  letter-spacing: -0.115385px;
+  padding: 1.6rem 3.2rem;
+  border: 1px solid var(--Link-Water-White);
+  border-radius: 2.4rem;
+  margin: 3.2rem 0 10rem;
+  display: inline-block;
+}
+.btn:hover {
+  background-color: var(--Link-Water-White);
+  color: var(--Mirage-Blue);
+}
+
+.img {
+  color: var(--Link-Water-White);
+}
+.twoCol {
+  display: flex;
+  align-items: center;
+  gap: 13.1rem;
+}
+.rightCol {
+  max-width: 53.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 6rem;
+  row-gap: 3.9rem;
+}
+.leftCol {
+  max-width: 44.5rem;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1200px) {
+  .companyWrap {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (min-width: 912px) and (max-width: 1280px) {
+  .rightCol {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3.9rem;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .twoCol {
+    flex-direction: column-reverse;
+    gap: 6.4rem;
+  }
+  .leftCol {
+    width: 100%;
+    text-align: center;
+  }
+  .rightCol {
+    gap: 3.9rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .companyWrap {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+  .rightCol {
+    grid-template-columns: 1fr 1fr;
+  }
+  .title {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+  }
+}
+@media screen and (max-width: 280px) {
+  .rightCol {
+    grid-template-columns: 1fr;
+  }
+}

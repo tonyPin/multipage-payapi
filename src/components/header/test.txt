@@ -1,0 +1,67 @@
+.headWrap {
+  /* padding: 4rem 16.4rem; */
+  isolation: isolate;
+  position: relative;
+}
+/* .headWrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url(../../assets/shared/desktop/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-position: 80rem -20.5rem;
+  background-origin: content-box;
+} */
+.headPadding {
+  padding: 4rem 16.4rem;
+  /* padding-left: 4rem;
+    padding-right: 4rem; */
+}
+
+.headerTwoCol {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.leftCol {
+  width: 50%;
+}
+.heroTitle {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7.2rem;
+  line-height: 7.2rem;
+  letter-spacing: -0.553846px;
+  color: var(--San-Juan-Blue);
+  max-width: 54.6rem;
+}
+.heroText {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: var(--Light-San-Juan-Blue);
+  padding-top: 1.6rem;
+}
+.righCol {
+  width: 50%;
+}
+
+.emailWrap {
+  padding-top: 4rem;
+}
+
+@media screen and (max-width: 820px) {
+  .headPadding {
+    /* padding: 4rem 16.4rem; */
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .headerTwoCol {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,74 @@
+.emailContainer {
+  border-radius: 2.4rem;
+  display: flex;
+  align-items: center;
+  max-width: 44.5rem;
+}
+
+.input {
+  width: 44.5rem;
+  height: 4.8rem;
+  border-radius: 2.4rem;
+  padding-left: 2.7rem;
+  outline: none;
+  border: none;
+  background-color: var(--Link-Water-White);
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-weight: 700;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  color: var(--San-Juan-Blue);
+}
+.button {
+  width: 17.3rem;
+  height: 4.8rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: var(--Link-Water-White);
+  background-color: var(--Dark-Pink);
+  border: none;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 2.4rem;
+  cursor: pointer;
+  margin-left: -17.3rem;
+}
+.button:hover {
+  background-color: var(--Charm-Pink-Actives);
+}
+
+@media screen and (max-width: 820px) {
+  .emailContainer {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .emailContainer {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .input {
+    width: 100%;
+    max-width: 44.5rem;
+    margin-bottom: 1.6rem;
+  }
+  .button {
+    width: 100%;
+    max-width: 44.5rem;
+    margin-left: 0;
+  }
+  .error {
+    text-align: center;
+  }
+}
+
+.error {
+  font-size: 1.6rem;
+  line-height: 1.3rem;
+  letter-spacing: -0.0846154px;
+  color: #ff0000;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  margin-top: 1rem;
+}
