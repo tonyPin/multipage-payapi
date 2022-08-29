@@ -1,5 +1,5 @@
 import "./App.css"
-import { HashRouter, Route, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 import Home from "./pages/home/Home"
 import Pricing from "./pages/pricing/Pricing"
 import About from "./pages/about/About"
@@ -11,13 +11,13 @@ function App() {
   return (
     <>
       <Routes>
-        <HashRouter basename="/" element={<SharedComponent />}>
+        <Route path="/" element={<SharedComponent />}>
           <Route index element={<Home />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
-        </HashRouter>
+        </Route>
       </Routes>
     </>
   )
