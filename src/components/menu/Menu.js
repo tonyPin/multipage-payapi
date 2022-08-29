@@ -3,8 +3,6 @@ import { Link } from "react-router-dom"
 import { ReactComponent as Logo } from "../../assets/shared/desktop/logo.svg"
 import DemoBtn from "../../demoBtn/DemoBtn"
 import MenuCSS from "./Menu.module.css"
-// import { ReactComponent as MenuClose } from "../../assets/shared/mobile/close.svg"
-// import { ReactComponent as MenuOpen } from "../../assets/shared/mobile/menu.svg"
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"
 
 const Menu = () => {
@@ -19,7 +17,6 @@ const Menu = () => {
   }
 
   return (
-    // <div className="wrapper">
     <div>
       <div className={MenuCSS.menu}>
         <Link to="/">
