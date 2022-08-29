@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/multipage" element={<SharedComponent />}>
+        <Route path="/" element={<SharedComponent />}>
           <Route index element={<Home />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
