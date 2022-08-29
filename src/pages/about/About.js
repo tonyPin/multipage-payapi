@@ -5,6 +5,7 @@ import deskhero from "../../assets/about/desktop/image-team-members.jpg"
 import tablethero from "../../assets/about/tablet/image-team-members.jpg"
 import mobilehero from "../../assets/about/mobile/image-team-members.jpg"
 import ReadyToStart from "../../components/readyToStart/ReadyToStart"
+import Footer from "../../components/footer/Footer"
 
 const About = () => {
   return (
@@ -104,6 +105,7 @@ const About = () => {
         </section>
       </div>
       <ReadyToStart />
+      <Footer />
     </>
   )
 }

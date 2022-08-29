@@ -11,6 +11,7 @@ import { ReactComponent as Oracle } from "../../assets/shared/desktop/oracle.svg
 import { ReactComponent as Google } from "../../assets/shared/desktop/google.svg"
 import { ReactComponent as Nvidia } from "../../assets/shared/desktop/nvidia.svg"
 import ReadyToStart from "../../components/readyToStart/ReadyToStart"
+import Footer from "../../components/footer/Footer"
 
 const initialValues = {
   name: "",
@@ -196,6 +197,7 @@ const Contact = () => {
         </section>
       </div>
       <ReadyToStart />
+      <Footer />
     </div>
   )
 }

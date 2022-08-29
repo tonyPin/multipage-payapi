@@ -3,6 +3,7 @@ import Menu from "../../components/menu/Menu"
 import PricingCSS from "./Pricing.module.css"
 import { Link } from "react-router-dom"
 import ReadyToStart from "../../components/readyToStart/ReadyToStart"
+import Footer from "../../components/footer/Footer"
 
 const Pricing = () => {
   return (
@@ -254,6 +255,7 @@ const Pricing = () => {
         </div>
         <ReadyToStart />
       </div>
+      <Footer />
     </section>
   )
 }
