@@ -1,7 +1,7 @@
 {
   "name": "payapi",
   "version": "0.1.0",
-  "homepage": "https://github.com/tonyPin/multipage.git",
+  "homepage": "https://github.com/tonyPin/payapi-site.git",
   "private": false,
   "dependencies": {
     "classnames": "^2.3.1",
