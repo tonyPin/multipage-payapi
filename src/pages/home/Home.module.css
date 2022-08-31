@@ -39,28 +39,6 @@
   letter-spacing: -0.138462px;
   padding: 3.2rem 0 1.6rem;
 }
-
-/* MOBILE */
-@media screen and (max-width: 1200px) {
-  .threeColumns,
-  .twoColumns,
-  .twoColimp {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-}
-@media screen and (max-width: 540px) {
-  .threeColumns {
-    grid-template-columns: 1fr;
-  }
-}
-@media screen and (max-width: 280px) {
-  .threeColumns {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
 /* UI UX SECTION */
 .twoColumns,
 .twoColimp {
@@ -89,15 +67,42 @@
   max-width: 44.5rem;
 }
 /* MOBILE */
+@media screen and (max-width: 1440px) {
+  .uiux::before {
+    background-position: 110rem center;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .uiux::before {
+    background-position: 90rem center;
+  }
+}
 @media screen and (max-width: 1200px) {
+  .threeColumns,
   .twoColumns,
   .twoColimp {
     padding-left: 4rem;
     padding-right: 4rem;
   }
 }
+@media screen and (max-width: 1024px) {
+  .uiux::before {
+    background-position: 80rem center;
+  }
+}
+@media screen and (max-width: 912px) {
+  .uiux::before {
+    background-position: 70rem center;
+  }
+}
 
 @media screen and (max-width: 820px) {
+  .uiux {
+    padding-top: 0;
+  }
+  .uiux::before {
+    display: none;
+  }
   .twoColumns {
     flex-direction: column-reverse;
     padding-bottom: 10rem;
@@ -119,12 +124,18 @@
     max-width: 57.4rem;
   }
 }
-/* @media screen and (max-width: 375px) {
-  .uiImg {
-    width: 100%;
+
+@media screen and (max-width: 540px) {
+  .threeColumns {
+    grid-template-columns: 1fr;
   }
-} */
+}
+
 @media screen and (max-width: 280px) {
+  .threeColumns {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .twoColumns,
   .twoColimp {
     padding-bottom: 10rem;
@@ -136,35 +147,5 @@
   }
   .uiTitle {
     font-size: 3rem;
-  }
-}
-
-/* BG-PATTERN MEDIA QUERY */
-@media screen and (max-width: 1440px) {
-  .uiux::before {
-    background-position: 110rem center;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .uiux::before {
-    background-position: 90rem center;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .uiux::before {
-    background-position: 80rem center;
-  }
-}
-@media screen and (max-width: 912px) {
-  .uiux::before {
-    background-position: 70rem center;
-  }
-}
-@media screen and (max-width: 820px) {
-  .uiux {
-    padding-top: 0;
-  }
-  .uiux::before {
-    display: none;
   }
 }

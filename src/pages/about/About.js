@@ -46,7 +46,7 @@ const About = () => {
         </div>
       </div>
       <section className={AboutCSS.bgPtn2}>
-        <div className="wrapper">
+        <div>
           <div className={AboutCSS.desktopHero}>
             <img src={deskhero} alt="" />
           </div>

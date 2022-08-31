@@ -9,18 +9,14 @@
   z-index: -1;
   background-image: url(../../assets/shared/desktop/bg-pattern-circle.svg);
   background-repeat: no-repeat;
-  /* background-size: contain; */
   background-position: 100rem -20rem;
 }
 
 .headPadding {
   padding: 4rem 16.4rem 0;
-  /* padding-left: 4rem;
-    padding-right: 4rem; */
 }
 
 .headerTwoCol {
-  /* border: 1px solid blue; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,11 +43,31 @@
   padding-top: 1.6rem;
 }
 
-/* MOBILE */
+/* MEDIA QUERIES */
+@media screen and (max-width: 1920px) {
+  .headWrap::before {
+    background-position: 98rem -20rem;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .headWrap::before {
+    background-position: 80rem -20rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .headWrap::before {
+    background-position: 65rem -20rem;
+  }
+}
 @media screen and (max-width: 1200px) {
   .headPadding {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .headWrap::before {
+    background-position: 50rem -20rem;
   }
 }
 @media screen and (max-width: 860px) {
@@ -60,6 +76,9 @@
   }
 }
 @media screen and (max-width: 820px) {
+  .headWrap::before {
+    background-position: center -50rem;
+  }
   .headPadding {
     padding-bottom: 10rem;
   }
@@ -74,6 +93,21 @@
     font-size: 4.8rem;
     line-height: 5.6rem;
     letter-spacing: -0.369231px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .headWrap::before {
+    background-position: center -45rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  .headWrap::before {
+    background-position: center -50rem;
+  }
+}
+@media screen and (max-width: 414px) {
+  .headWrap::before {
+    background-position: center -55rem;
   }
 }
 @media screen and (max-width: 412px) {
@@ -92,42 +126,6 @@
     font-size: 3.2rem;
     line-height: 3.6rem;
     letter-spacing: -0.246154px;
-  }
-}
-/* BG-PATTERN MEDIA QUERY */
-@media screen and (max-width: 1440px) {
-  .headWrap::before {
-    background-position: 80rem -20rem;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .headWrap::before {
-    background-position: 65rem -20rem;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .headWrap::before {
-    background-position: 50rem -20rem;
-  }
-}
-@media screen and (max-width: 820px) {
-  .headWrap::before {
-    background-position: center -50rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .headWrap::before {
-    background-position: center -45rem;
-  }
-}
-@media screen and (max-width: 540px) {
-  .headWrap::before {
-    background-position: center -25rem;
-  }
-}
-@media screen and (max-width: 414px) {
-  .headWrap::before {
-    background-position: center -55rem;
   }
 }
 @media screen and (max-width: 280px) {

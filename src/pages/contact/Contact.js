@@ -160,7 +160,6 @@ const Contact = () => {
                         <input
                           id="stayInTouch"
                           type="checkbox"
-                          className="form-control"
                           name="stay"
                           onChange={formik.handleChange}
                           value={formik.values.stay}
@@ -170,11 +169,11 @@ const Contact = () => {
                           to our API
                         </label>
                       </div>
-                      <br />
-                      <br />
-                      <button type="submit" className={ContactCSS.btn}>
-                        submit
-                      </button>
+                      <div>
+                        <button type="submit" className={ContactCSS.btn}>
+                          submit
+                        </button>
+                      </div>
                     </form>
                   </div>
                 </div>
