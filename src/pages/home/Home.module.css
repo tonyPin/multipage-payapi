@@ -48,7 +48,8 @@
   justify-content: space-between;
 }
 .uiImg {
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
 }
 .uiTitle {
   font-family: "DM Serif Display";
@@ -112,7 +113,7 @@
     padding-bottom: 10rem;
   }
   .uiImg {
-    width: 400px;
+    max-width: 400px;
   }
   .uiTitle {
     font-size: 3.6rem;
@@ -143,7 +144,7 @@
     padding-right: 1rem;
   }
   .uiImg {
-    width: 200px;
+    max-width: 200px;
   }
   .uiTitle {
     font-size: 3rem;

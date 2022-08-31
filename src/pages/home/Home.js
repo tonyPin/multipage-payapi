@@ -24,7 +24,7 @@ const Home = () => {
         <div className="wrapper">
           <div className={HomeCSS.twoColimp}>
             <div className={HomeCSS.implementLeft}>
-              <img src={imp} className={HomeCSS.uiImg} alt="" />
+              <img src={imp} className={HomeCSS.uiImg} alt="easy-implement" />
             </div>
             <div className={HomeCSS.ImplementRight}>
               <h2 className={HomeCSS.uiTitle}>Easy to implement</h2>
@@ -49,7 +49,7 @@ const Home = () => {
               </p>
             </div>
             <div className={HomeCSS.uiRight}>
-              <img src={uiux} className={HomeCSS.uiImg} alt="" />
+              <img src={uiux} className={HomeCSS.uiImg} alt="simple-ui-ux" />
             </div>
           </div>
         </div>
