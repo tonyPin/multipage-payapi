@@ -1,12 +1,9 @@
 .bg {
   background-color: var(--Mirage-Blue);
-  /* background-color: brown; */
-  height: 476px;
   isolation: isolate;
   position: relative;
 }
 .bg::before {
-  /* content: url(../../assets/shared/desktop/bg-pattern-circle.svg); */
   content: "";
   position: absolute;
   inset: 0;
@@ -20,18 +17,7 @@
 .companyWrap {
   padding: 10rem 16.4rem 0;
   position: relative;
-  /* isolation: isolate; */
 }
-/* .companyWrap::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-image: url(../../assets/shared/desktop/bg-pattern-circle.svg);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: -25rem -35rem;
-} */
 .title {
   font-family: "DM Serif Display";
   font-size: 4.8rem;
