@@ -12,6 +12,7 @@
   background-image: url(../../assets/shared/desktop/bg-pattern-circle.svg);
   background-repeat: no-repeat;
   background-size: contain;
+
   background-position: 130rem center;
 }
 
@@ -44,12 +45,13 @@
 .twoColimp {
   display: flex;
   align-items: center;
-  padding: 0 16.4rem;
+  padding: 4rem 16.4rem;
   justify-content: space-between;
 }
 .uiImg {
   max-width: 450px;
   width: 100%;
+  filter: drop-shadow(16px 16px 10px #6c8294);
 }
 .uiTitle {
   font-family: "DM Serif Display";
@@ -94,6 +96,9 @@
 @media screen and (max-width: 912px) {
   .uiux::before {
     background-position: 70rem center;
+  }
+  .twoColimp {
+    gap: 2.4rem;
   }
 }
 
@@ -142,9 +147,6 @@
     padding-bottom: 10rem;
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-  .uiImg {
-    max-width: 200px;
   }
   .uiTitle {
     font-size: 3rem;

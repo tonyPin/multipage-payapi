@@ -1,7 +1,6 @@
 {
   "name": "payapi",
   "version": "0.1.0",
-  "homepage": "https://github.com/tonyPin/project-site1.git",
   "private": false,
   "dependencies": {
     "classnames": "^2.3.1",
@@ -13,8 +12,6 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -38,7 +35,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
-  }
+  "devDependencies": {}
 }

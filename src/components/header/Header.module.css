@@ -9,6 +9,7 @@
   z-index: -1;
   background-image: url(../../assets/shared/desktop/bg-pattern-circle.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   background-position: 100rem -20rem;
 }
 
@@ -20,6 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 7.4rem 0;
 }
 
 .heroTitle {
@@ -41,6 +43,11 @@
   line-height: 1.8rem;
   color: var(--Light-San-Juan-Blue);
   padding-top: 1.6rem;
+}
+.heroImg {
+  max-width: 263px;
+  filter: drop-shadow(16px 16px 10px #6c8294);
+  margin-right: 8rem;
 }
 
 /* MEDIA QUERIES */
@@ -72,18 +79,21 @@
 }
 @media screen and (max-width: 860px) {
   .heroImg {
-    max-width: 300px;
+    max-width: 159px;
+    margin: 0;
   }
 }
 @media screen and (max-width: 820px) {
   .headWrap::before {
-    background-position: center -50rem;
+    background-position: center -45rem;
   }
   .headPadding {
     padding-bottom: 10rem;
   }
   .headerTwoCol {
     flex-direction: column-reverse;
+    gap: 2.4rem;
+    padding: 4.8rem 0 0;
   }
 
   .leftCol {
@@ -102,12 +112,13 @@
 }
 @media screen and (max-width: 540px) {
   .headWrap::before {
-    background-position: center -50rem;
+    background-position: center -25rem;
   }
 }
 @media screen and (max-width: 414px) {
   .headWrap::before {
     background-position: center -55rem;
+    background-size: cover;
   }
 }
 @media screen and (max-width: 412px) {
@@ -117,7 +128,7 @@
     padding-bottom: 7.9rem;
   }
   .heroImg {
-    width: 200px;
+    width: 128px;
   }
   .leftCol {
     text-align: center;
@@ -131,5 +142,8 @@
 @media screen and (max-width: 280px) {
   .headWrap::before {
     background-position: center -55rem;
+  }
+  .heroImg {
+    max-width: 128px;
   }
 }

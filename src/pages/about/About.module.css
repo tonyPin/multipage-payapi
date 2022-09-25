@@ -42,7 +42,6 @@
   font-weight: 400;
   font-size: 5.6rem;
   line-height: 5.6rem;
-  /* text-align: center; */
   letter-spacing: -0.369231px;
   max-width: 65rem;
   color: var(--San-Juan-Blue);
@@ -88,7 +87,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* border-bottom: 1px solid rgb(108, 130, 148, 0.4); */
   gap: 3rem;
 }
 .titleH3 {
@@ -240,7 +238,7 @@
 }
 @media screen and (max-width: 414px) {
   .bgPtn::before {
-    background-position: 20rem -50rem;
+    background-position: 20rem -20rem;
   }
 }
 @media screen and (max-width: 280px) {

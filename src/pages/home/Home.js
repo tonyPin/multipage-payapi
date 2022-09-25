@@ -12,7 +12,8 @@ import pf from "../../assets/home/desktop/icon-personal-finances.svg"
 import bc from "../../assets/home/desktop/icon-banking-and-coverage.svg"
 import cp from "../../assets/home/desktop/icon-consumer-payments.svg"
 import uiux from "../../assets/home/desktop/illustration-simple-ui.svg"
-import imp from "../../assets/home/desktop/illustration-easy-to-implement.svg"
+import imp from "../../assets/home/desktop/impl-imgds.svg"
+// import imp from "../../assets/home/desktop/illustration-easy-to-implement.svg"
 import Footer from "../../components/footer/Footer"
 
 const Home = () => {

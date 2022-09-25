@@ -1,7 +1,8 @@
 import React from "react"
 import HeaderCSS from "./Header.module.css"
 import EmailInput from "../emailInput/EmailInput"
-import HeroImage from "../../assets/home/desktop/illustration-phone-mockup.svg"
+// import HeroImage from "../../assets/home/desktop/illustration-phone-mockup.svg"
+import HeroImage from "../../assets/home/desktop/mobile-imgds.svg"
 import Menu from "../menu/Menu"
 
 const Header = () => {

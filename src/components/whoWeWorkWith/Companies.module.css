@@ -1,10 +1,37 @@
 .bg {
   background-color: var(--Mirage-Blue);
+  /* background-color: brown; */
+  height: 476px;
+  isolation: isolate;
+  position: relative;
+}
+.bg::before {
+  /* content: url(../../assets/shared/desktop/bg-pattern-circle.svg); */
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url(../../assets/shared/desktop/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center left;
 }
 
 .companyWrap {
   padding: 10rem 16.4rem 0;
+  position: relative;
+  /* isolation: isolate; */
 }
+/* .companyWrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url(../../assets/shared/desktop/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -25rem -35rem;
+} */
 .title {
   font-family: "DM Serif Display";
   font-size: 4.8rem;
@@ -59,10 +86,28 @@
 }
 
 /* MOBILE */
+@media screen and (min-width: 1440px) {
+  .bg::before {
+    background-size: auto;
+    background-position: top -350px left -250px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .bg::before {
+    background-size: auto;
+    background-position: top -350px left -20px;
+  }
+}
 @media screen and (max-width: 1200px) {
   .companyWrap {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+}
+@media screen and (min-width: 913px) and (max-width: 1000px) {
+  .bg::before {
+    background-size: auto;
+    background-position: center left -200px;
   }
 }
 
@@ -85,6 +130,10 @@
   .rightCol {
     gap: 3.9rem;
   }
+  .bg::before {
+    background-size: auto;
+    background-position: center -520px;
+  }
 }
 
 @media screen and (max-width: 414px) {
@@ -92,6 +141,11 @@
     padding-left: 2.4rem;
     padding-right: 2.4rem;
   }
+  .bg::before {
+    /* background-size: contain; */
+    background-position: center -470px;
+  }
+
   .rightCol {
     grid-template-columns: 1fr 1fr;
   }
